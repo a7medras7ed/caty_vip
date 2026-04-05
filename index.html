@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>VIP Orbit System With Popup</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="space-scene">
+        <div class="space-bg"></div>
+        <div class="space-overlay"></div>
+
+        <div class="stars stars-small" id="starsSmall"></div>
+        <div class="stars stars-medium" id="starsMedium"></div>
+        <div class="stars stars-large" id="starsLarge"></div>
+
+        <div class="nebula-glow nebula-1"></div>
+        <div class="nebula-glow nebula-2"></div>
+        <div class="nebula-glow nebula-3"></div>
+
+        <div class="shooting-stars" id="shootingStars"></div>
+
+        <div class="system-stage">
+            <div class="solar-light solar-light-outer"></div>
+            <div class="solar-light solar-light-mid"></div>
+            <div class="solar-light solar-light-core"></div>
+
+            <div class="ring-system system-drift" id="ringSystem">
+                <div class="orbit-ring" data-ring="1"></div>
+                <div class="orbit-ring" data-ring="2"></div>
+                <div class="orbit-ring" data-ring="3"></div>
+                <div class="orbit-ring" data-ring="4"></div>
+                <div class="orbit-ring" data-ring="5"></div>
+                <div class="orbit-ring" data-ring="6"></div>
+                <div class="orbit-ring" data-ring="7"></div>
+            </div>
+
+            <div class="sun-holder" aria-label="VIP Sun">
+                <div class="sun-aura"></div>
+                <img src="sun-vip.png" alt="VIP Sun" class="sun-image" />
+            </div>
+
+            <div class="planets-layer" id="planetsLayer">
+                <button class="planet vip1 planet-button" id="planet-vip1" data-vip="vip1" aria-label="VIP1">
+                    <div class="planet-core"><img src="planet-vip1.png" alt="VIP1" /></div>
+                </button>
+
+                <button class="planet vip2 planet-button" id="planet-vip2" data-vip="vip2" aria-label="VIP2">
+                    <div class="planet-core"><img src="planet-vip2.png" alt="VIP2" /></div>
+                </button>
+
+                <button class="planet vip3 planet-button" id="planet-vip3" data-vip="vip3" aria-label="VIP3">
+                    <div class="planet-core"><img src="planet-vip3.png" alt="VIP3" /></div>
+                </button>
+
+                <button class="planet vip4 planet-button" id="planet-vip4" data-vip="vip4" aria-label="VIP4">
+                    <div class="planet-core"><img src="planet-vip4.png" alt="VIP4" /></div>
+                </button>
+
+                <button class="planet vip5 planet-button" id="planet-vip5" data-vip="vip5" aria-label="VIP5">
+                    <div class="planet-core"><img src="planet-vip5.png" alt="VIP5" /></div>
+                </button>
+
+                <button class="planet vip6 planet-button" id="planet-vip6" data-vip="vip6" aria-label="VIP6">
+                    <div class="planet-core"><img src="planet-vip6.png" alt="VIP6" /></div>
+                </button>
+
+                <button class="planet vip7 planet-button" id="planet-vip7" data-vip="vip7" aria-label="VIP7">
+                    <div class="planet-core"><img src="planet-vip7.png" alt="VIP7" /></div>
+                </button>
+            </div>
+        </div>
+
+        <div class="vip-modal" id="vipModal" aria-hidden="true">
+            <div class="vip-modal-backdrop" id="vipModalBackdrop"></div>
+
+            <div class="vip-card-shell" role="dialog" aria-modal="true" aria-labelledby="vipTitle">
+                <button class="vip-close" id="vipCloseBtn" aria-label="إغلاق">×</button>
+
+                <div class="vip-card">
+                    <div class="vip-card-glow"></div>
+
+                    <div class="vip-card-meteors">
+                        <span class="card-meteor m1"></span>
+                        <span class="card-meteor m2"></span>
+                        <span class="card-meteor m3"></span>
+                    </div>
+
+                    <div class="vip-card-content">
+                        <div class="vip-card-main">
+                            <div class="vip-header">
+                                <span class="vip-badge" id="vipBadge">VIP</span>
+                                <h2 id="vipTitle">VIP Level</h2>
+                                <p id="vipSubtitle">العناصر الخاصة بالمستوى</p>
+                            </div>
+
+                            <div class="vip-features-grid" id="vipFeaturesGrid"></div>
+                        </div>
+
+                        <div class="vip-card-side">
+                            <img src="astronaut-side.png" alt="Astronaut" class="vip-astronaut" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
